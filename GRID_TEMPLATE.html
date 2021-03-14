@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+  font-family: Arial;
+  margin: 0;
+  
+}
+
+.header{
+
+    background-color: coral;
+    color: wheat;
+    padding: 20px;
+    text-align: center;
+    grid-area: header;
+}
+.nav{
+    background-color: cadetblue;
+    padding: 10px;
+    grid-area:nav;
+}
+.nav a{
+    text-decoration: none;
+    font-size:  20px;
+    color: aliceblue;
+    padding: 6px 20px;
+}
+.grid{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'nav nav nav nav nav nav'
+    'left left main main main right';
+    grid-gap: 15px;
+
+}
+    .left{
+        grid-area: left;
+    }
+    .main{
+        grid-area: main;
+    }
+    .right{
+        grid-area: right;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+    <div class="grid">
+
+        <div class="header">
+            <h3>Header</h3>
+            <p>Logo</p>
+
+        </div>
+        <div class="nav">
+            <a href="">Link</a>
+            <a href="">Link2</a>
+            <a href="">Link3</a>
+            <a href="">Link4</a>
+
+        </div>
+
+        <div class="left">
+                <h2>About Me</h2>
+                <h5>Photo of me:</h5>
+                <div class="fakeimg" style="height:60px;">Image</div><br>
+                <div class="fakeimg" style="height:60px;">Image</div><br>
+                <div class="fakeimg" style="height:60px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+
+        <div class="main">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <br>
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              </div>
+
+              <div class="right">
+                    <h2>About Me</h2>
+                    <h5>Photo of me:</h5>
+                    <div class="fakeimg" style="height:60px;">Image</div><br>
+                    <div class="fakeimg" style="height:60px;">Image</div><br>
+                    <div class="fakeimg" style="height:60px;">Image</div>
+                    <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div
+
+
+
+            >
+    </div>
+    <div class="footer">
+            <h2>Footer</h2>
+          </div>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

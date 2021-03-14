@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+
+
+
+
+
+
+    <style>
+
+
+
+
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial;
+  margin: 0;
+  background-color: whitesmoke;
+        }
+        .head{
+            background-color: chocolate;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            grid-area: head;
+            grid-column: 1 / 8;
+        }
+        .menu{
+            grid-area: menu;
+            background-color: brown;
+            padding: 20px;
+            
+            
+        }
+        .menu a{
+            text-decoration: none;
+            padding: 7px 20px;
+            color: azure;
+            grid-column: 1 / 8;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto;
+            grid-gap: 20px;
+            padding: 10px;
+
+        }
+        .left{
+            grid-area: left;
+            padding: 22px;
+            grid-column: 1 / 3;
+            overflow: auto;
+        }
+        .main{
+            grid-area: main;
+            padding: 22px;
+        }
+        .right{
+            grid-area: right;
+            padding: 22px;
+        }
+
+        @media only screen and (max-width: 500px) {
+  . header { grid-area: 1 / span 3 / 2 / 4; }
+  .item2 { grid-area: 3 / 3 / 4 / 4; }
+  .item3 { grid-area: 2 / 1 / 3 / 2; }
+  .item4 { grid-area: 2 / 2 / span 2 / 3; }
+  .item5 { grid-area: 3 / 1 / 4 / 2; }
+  .item6 { grid-area: 2 / 3 / 3 / 4; }
+}
+    
+    
+    
+    
+    
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+    <div class="grid-container">
+
+
+        <header class="head">
+            <h3>Logo</h3>
+            <h2>My pages</h2>
+        </header>
+        <nav class="menu">
+
+            <a href="">Link1 </a>
+            <a href="">Link1 </a>
+            <a href="">Link1 </a>
+            <a href="">Link1 </a>
+            <a href="">Link1 </a>
+            <a href="">Link1 </a>
+            <a href="">Link1 </a>
+            <a href="">Link1 </a>
+            <a href="">Link1 </a>
+            <a href="">Link1 </a>
+        </nav>
+
+
+        <div class="left">
+
+                <h2>About Me</h2>
+                <h5>Photo of me:</h5>
+                <div class="fakeimg" style="height:60px;">Image</div><br>
+                <div class="fakeimg" style="height:60px;">Image</div><br>
+                <div class="fakeimg" style="height:60px;">Image</div>
+                p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                     <h2>About Me</h2>
+                <h5>Photo of me:</h5>
+                <div class="fakeimg" style="height:60px;">Image</div><br>
+                <div class="fakeimg" style="height:60px;">Image</div><br>
+                <div class="fakeimg" style="height:60px;">Image</div>
+                p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+        </div>
+
+
+
+        <div class="main">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <br>
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <h2>TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+        </div>
+
+
+        <div class="right">
+
+                <h2>About Me</h2>
+                <h5>Photo of me:</h5>
+                <div class="fakeimg" style="height:60px;">Image</div><br>
+                <div class="fakeimg" style="height:60px;">Image</div><br>
+                <div class="fakeimg" style="height:60px;">Image</div>
+                p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                     <h2>About Me</h2>
+                <h5>Photo of me:</h5>
+                <div class="fakeimg" style="height:60px;">Image</div><br>
+                <div class="fakeimg" style="height:60px;">Image</div><br>
+                <div class="fakeimg" style="height:60px;">Image</div>
+                p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="footer">
+            <h2>Footer</h2>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

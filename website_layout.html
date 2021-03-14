@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box; 
+        }
+        body{
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        .header{
+            background: white;;
+            text-align: center;
+            padding: 30px;
+        }
+        .header h1 {
+  font-size: 50px;
+}
+
+.topnav{
+  background-color: #333;
+  overflow: hidden;
+}
+.topnav li{
+    float: left;
+    list-style-type: none;
+}
+.topnav li a{
+    display: block;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.topnav a:hover{
+    background-color: red;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 160px;
+    background-color: blue;
+}
+.dropdown-content a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    display: block;
+    }
+    .dropdown-content a:hover{
+        background-color: aquamarine; 
+         }
+         .dropdown:hover .dropdown-content{
+             display: block;
+         }
+         .leftcolumn{
+             width: 75%;
+             float: left;
+         }
+         .rightcolumn{
+             float: left;
+             width: 25%;
+             background-color: #f1f1f1;
+             padding-left: 20px;
+         }
+         .fakeimg{
+             width: 100%;
+             padding: 20px;
+             background-color: #333;
+             color: white;
+         }
+         .card{
+             margin-top: 20px;
+             padding: 20px;
+             background-color: white;
+         }
+         .row:after{
+             content: "";
+             clear: both;
+         }
+         .footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav li {
+    float: none;
+    width: 100%;
+  }
+  .dropdown-content,[type=text],select {
+      width: 100%;
+
+  }
+}
+.frm1{
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    padding: 22px;
+    width: 
+}
+input[type=text],select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 22px 0;}
+    label{
+        margin: 7px 0;
+        color: red;
+       
+    }
+    button{
+        background-color:coral;
+        color: whitesmoke;
+        padding: 15px;
+        text-align: center;
+        border: none;
+        width: 100%;
+        border-radius: 7px;
+    }
+
+
+
+
+
+
+
+    
+    
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+
+
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Resize the browser window to see the effect.</p>
+    </div>
+
+    <div class="topnav">
+     <li><a href="">Home</a></li>  
+     <li><a href="">Link</a></li>
+     <li class="dropdown"><a href="">Dropdown</a>
+        <div class="dropdown-content">
+            <a href="">Drop1</a>
+            <a href="">Drop2</a>
+            <a href="">Drop3</a>
+        </div>
+    </li>
+    <li><a href="" style="float:right">Link2</a></li>
+    </div>
+
+    <div class="row">
+
+        <div class="leftcolumn">
+            <div class="card">
+                    <h2>TITLE HEADING</h2>
+                    <h5>Title description, Dec 7, 2017</h5>
+                    <div class="fakeimg">image</div>
+                    <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+                
+            </div>
+            <div class="card">
+                   <h2>TITLE HEADING</h2>
+                    <h5>Title description, Sep 2, 2017</h5>
+                    <div class="fakeimg" style="height:200px;">Image</div>
+                    <p>Some text..</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="rightcolumn">
+
+        <div class="card">
+            <h2>Aboutme</h2>
+            <div class="fakeimg" style="height:100px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        </div>
+        <div class="card">
+            <h3>Popular Post</h3>
+             <div class="fakeimg"><p>Image</p></div>
+             <div class="fakeimg"><p>Image</p></div>
+             <div class="fakeimg"><p>Image</p></div>
+        </div>
+        <div class="card">
+                <h3>Follow Me</h3>
+                <p>Some text..</p>
+              </div> 
+    </div>
+
+    <div class="footer">
+            <h2>Footer</h2>
+          </div>
+
+
+
+    
+              <form action="" class="frm1">
+                  <label for="fname">Firstname</label>
+                  <input type="text" name="firsname" id="fname" placeholder="firstname">
+                  <label for="lanme">Lastname</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Lastname">
+                  <label for="country">Country</label>
+                  <select name="country" id="country">
+                      <option value="gd">Germany</option>
+                      <option value="Ind">India</option>
+                  </select>
+                  <button>Submit</button>
+              </form>
+
+
+        
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tooltip</title>
+
+    <style>
+
+     .tooltip {
+        font-size:27px;
+        position: relative;
+        display: inline-block;
+        border-bottom: 3px dotted blue;
+
+        }
+        
+        .text{
+           display: none;;
+            position: absolute;
+            max-width: 120px;
+            padding: 5px;
+            color:white;
+            z-index: 1;
+            background-color: black;
+            word-wrap: break-word;
+            text-align: center;
+            
+            }
+
+
+            .tooltip:hover .text{
+               display: inline;
+            }
+
+
+        
+
+    
+    
+    
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+    <h3>Tooltip are here</h3>
+
+    <div class="tooltip">
+
+        Hover Over Me
+
+        <span class="text">I am tooltip</span>
+        
+
+
+    </div>
+    
+</body>
+</html>

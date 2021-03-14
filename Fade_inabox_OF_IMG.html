@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    .container{
+        position: relative;
+        width: 20%;
+    }
+
+    .middle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        transition: 1s ease;
+        
+    }
+    .image{
+        width: 100%;
+        display: block;
+        transition: 1s ease;
+        opacity: 1;
+    }
+    .text{
+        position: absolute;
+        color: aliceblue;
+        top: 50%;
+        right: 50%;
+        background-color: greenyellow;
+        padding: 22px;
+        transform: translate(55px,-20px);
+        color: black;
+        transition: 1s ease;
+
+    }
+    .container:hover .image{
+        opacity: 0.5;
+    }
+    .container:hover .middle{
+        opacity: 1;
+    }
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+    <div class="container">
+
+        <img src="img/i1.jpg" alt="img" width="350px" height="400px" style="object-fit:fill" class="image">
+        <div class="middle">
+            <div class="text"> Hello world </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    
+</body>
+</html>

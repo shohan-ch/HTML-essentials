@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      input[type=text],select{
+          width: 100%;
+          display: inline-block;
+          padding: 12px 20px;
+          margin: 8px 0;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+           box-sizing: border-box;
+      }
+    .frm1{
+        width: 100%;
+     background-color: #f2f2f2;
+     border-radius: 20px;
+     padding: 20px;
+    }
+    button{
+        background-color: aqua;
+        width: 100%;
+        color: black;
+        padding: 20px;
+        border-radius: 5px;
+        border: none;
+        margin: 8px 0;
+    }
+    
+    
+    
+    </style>
+
+
+
+
+</head>
+<body>
+
+
+
+    <div class="frm1">
+        <form action="index.php">
+
+            <label for="fname">Firstname</label>
+            <input type="text" name="firstname" placeholder="User First Name" id="fname">
+            <label for="lname">Lastname</label>
+            <input type="text" name="lastname" id="lname" placeholder="User Last name">
+            <label for="country">country</label>
+            <select name="country" id="country">
+                <option value="">Select Your Country</option>
+                <option value="Germany">Germany</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="India">india</option>
+            </select>
+
+            <button>Submit</button>
+
+
+
+        </form>
+
+
+
+    </div>
+    
+</body>
+</html>

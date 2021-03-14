@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tooltip{
+            position: relative;
+            display: inline-block;
+        }
+        .tooltip .text{
+            visibility: hidden;
+            position: absolute;
+            max-width: 120px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 7px;
+            
+            z-index: 1;
+        }
+    
+
+        .tooltip .text ::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+             right: 100%;
+             margin-top: -5px;
+              border-width: 5px;
+              border-style: solid;
+               border-color: transparent black transparent transparent;
+    
+        }
+        .tooltip:hover .text{
+            visibility: visible;
+        }
+
+    
+    
+    
+    
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class="tooltip">
+        Hover me
+        <Span class="text">I am Here</Span>
+    </div>
+    
+</body>
+</html>
